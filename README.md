@@ -11,6 +11,7 @@ Store and Deliver images with Cloudflare R2 backend Cloudflare Workers.
 4. **r2-image-worker** will respond the key of the stored image. `abcdef.png`
 5. **r2-image-worker** serve the images on `https://r2-image-worker.username.workers.dev/abcdef.png`
 6. Images will be cached on Cloudflare CDN.
+7. images will be distrubted one time to CDN and then cached
 
 ```
 User => Image => base64 => r2-image-worker => R2
